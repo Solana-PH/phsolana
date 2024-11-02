@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className='min-h-screen h-full flex flex-col gap-5 p-5 items-center justify-center'>
+    <div className='min-h-screen h-full flex flex-col gap-5 p-5 items-center justify-center text-center'>
       <img
         src='/logo.svg'
         alt='Solana PH'
