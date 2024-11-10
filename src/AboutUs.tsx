@@ -26,6 +26,7 @@ export function AboutUs() {
             target='_blank'
             rel='noreferrer noopener'
             className={cn(
+              'text-center',
               'sm:w-fit lg:text-2xl px-5 py-3',
               'text-black bg-yellow-500 border-t-2 border-l-2 border-4 border-black',
               'font-bold hover:bg-yellow-200'
