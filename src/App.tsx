@@ -62,20 +62,20 @@ function App() {
         <div
           className={cn(
             'absolute -top-[67.5vh] inset-x-0 flex flex-col overflow-hidden p-[calc(min(5vw,5vh))]',
-            'landscape:p-[calc(min(10vw,10vh))]'
+            'landscape:p-[calc(min(12.5vw,12.5vh))]'
           )}
         >
-          <h1 className='font-serif '>
-            <span className='ml-[calc(min(5vw,5vh))] xl:text-7xl lg:text-6xl text-5xl stroked'>
+          <h1 className='font-serif'>
+            <span className='ml-[calc(min(5vw,5vh))] xl:text-7xl sm:text-6xl text-5xl stroked'>
               Tara na!
             </span>{' '}
             <br />
-            <span className='xl:text-9xl lg:text-8xl text-6xl stroked'>
+            <span className='xl:text-9xl sm:text-8xl text-7xl stroked'>
               Solana
             </span>
             <br />
-            <span className='ml-[calc(min(10vw,10vh))] xl:text-9xl lg:text-8xl text-6xl stroked'>
-              Pilipinas!!
+            <span className='ml-[calc(min(10vw,10vh))] xl:text-9xl sm:text-8xl text-7xl stroked'>
+              Pilipinas!
             </span>
           </h1>
         </div>
