@@ -42,13 +42,13 @@ export function Masthead() {
           </div>
         </div>
       </div>
-      <div className='w-full h-[25vh] bg-gray-900 relative mt-[75vh]'>
-        <div className='w-full h-[25vh] absolute -top-[12.5vh] overflow-visible'>
+      <div className='w-full h-[25vh] bg-gray-900 relative mt-[75vh] '>
+        <div className='w-full h-[25vh] absolute -top-[12.5vh] overflow-visible pointer-events-none'>
           <img src='/ribbon.svg' className='w-full h-full object-fill' />
         </div>
         <div
           className={cn(
-            'absolute landscape:-top-[70vh] portrait:-top-[70vw] inset-x-0 flex justify-center overflow-hidden'
+            'absolute landscape:-top-[70vh] portrait:-top-[70vw] inset-x-0 flex justify-center overflow-hidden pointer-events-none'
           )}
         >
           <img
@@ -61,29 +61,46 @@ export function Masthead() {
         </div>
         <div
           className={cn(
-            'absolute -top-[67.5vh] inset-x-0 flex flex-col overflow-hidden p-[calc(min(5vw,5vh))]',
-            'landscape:p-[calc(min(12.5vw,12.5vh))]'
+            'absolute inset-x-0 flex flex-col overflow-hidden py-[12vh]',
+            'landscape:-top-[60vh] portrait:-top-[77.5vh] '
           )}
         >
-          <h1
-            className='font-serif'
-            style={{
-              transform: 'rotateZ(5deg)',
-              transformStyle: 'preserve-3d',
-            }}
-          >
-            <span className='ml-[calc(min(5vw,5vh))] xl:text-7xl sm:text-6xl text-5xl stroked'>
-              Tara na!
-            </span>{' '}
-            <br />
-            <span className='xl:text-9xl sm:text-8xl text-7xl stroked-solana'>
-              Solana
-            </span>
-            <br />
-            <span className='ml-[calc(min(10vw,10vh))] xl:text-9xl sm:text-8xl text-7xl stroked-ph'>
-              Pilipinas!
-            </span>
-          </h1>
+          <div className='w-[90vw] max-w-7xl mx-auto '>
+            <h1
+              className={cn(
+                'font-serif leading-none',
+                'text-[calc(min(1.8vw,1.8vh))]'
+              )}
+              style={{
+                transform: 'rotateZ(10deg)',
+                transformStyle: 'preserve-3d',
+              }}
+            >
+              <span
+                className={cn('ml-[calc(min(5vw,5vh))] stroked', 'text-[6em]')}
+              >
+                Tara na!
+              </span>{' '}
+              <br />
+              <span
+                className={cn(
+                  'ml-[calc(min(2.5vw,2.5vh))] stroked-solana',
+                  'text-[10em]'
+                )}
+              >
+                Solana
+              </span>
+              <br />
+              <span
+                className={cn(
+                  'ml-[calc(min(10vw,10vh))] stroked-ph',
+                  'text-[10em]'
+                )}
+              >
+                Pilipinas!
+              </span>
+            </h1>
+          </div>
         </div>
       </div>
     </>
