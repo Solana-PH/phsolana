@@ -42,7 +42,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='w-full h-screen bg-white relative'>
+      <div className='w-full bg-gray-900 relative'>
         <div className='w-full h-[25vh] absolute -top-[12.5vh] overflow-visible'>
           <img src='/ribbon.svg' className='w-full h-full object-fill' />
         </div>
@@ -65,16 +65,22 @@ function App() {
             'landscape:p-[calc(min(12.5vw,12.5vh))]'
           )}
         >
-          <h1 className='font-serif'>
+          <h1
+            className='font-serif'
+            style={{
+              transform: 'rotateZ(5deg)',
+              transformStyle: 'preserve-3d',
+            }}
+          >
             <span className='ml-[calc(min(5vw,5vh))] xl:text-7xl sm:text-6xl text-5xl stroked'>
               Tara na!
             </span>{' '}
             <br />
-            <span className='xl:text-9xl sm:text-8xl text-7xl stroked'>
+            <span className='xl:text-9xl sm:text-8xl text-7xl stroked-solana'>
               Solana
             </span>
             <br />
-            <span className='ml-[calc(min(10vw,10vh))] xl:text-9xl sm:text-8xl text-7xl stroked'>
+            <span className='ml-[calc(min(10vw,10vh))] xl:text-9xl sm:text-8xl text-7xl stroked-ph'>
               Pilipinas!
             </span>
           </h1>
