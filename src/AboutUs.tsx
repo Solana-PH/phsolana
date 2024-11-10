@@ -1,8 +1,10 @@
+import cn from 'classnames'
+
 export function AboutUs() {
   return (
     <div className='flex flex-col bg-gray-900 relative'>
       <div className='grid grid-cols-12 p-10 md:p-20 pt-0'>
-        <div className='col-span-12 sm:col-span-7 flex flex-col gap-5 h-full justify-center'>
+        <div className='col-span-12 sm:col-span-7 flex flex-col gap-5 md:gap-10 h-full justify-center'>
           <h2 className='font-bold text-2xl lg:text-5xl'>
             About <wbr />
             Solana Philippines
@@ -19,6 +21,18 @@ export function AboutUs() {
             hands-on projects, we’re here to make blockchain accessible,
             meaningful, and, yes—fun!
           </p>
+          <a
+            href='https://www.facebook.com/groups/solanaphilippines'
+            target='_blank'
+            rel='noreferrer noopener'
+            className={cn(
+              'sm:w-fit lg:text-2xl px-5 py-3',
+              'text-black bg-yellow-500 border-t-2 border-l-2 border-4 border-black',
+              'font-bold hover:bg-yellow-200'
+            )}
+          >
+            Join Our Community!
+          </a>
         </div>
         <div className='col-span-12 sm:col-span-5 flex flex-col gap-5 h-full items-center'>
           <img
