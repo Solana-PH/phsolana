@@ -10,15 +10,15 @@ export function AboutUs() {
             Solana Philippines
           </h2>
 
-          <img
-            src='/tvs.webp'
-            className='sm:hidden w-full aspect-square object-contain'
-          />
           <p className='lg:text-xl'>
             Founded during the Bear Market in June 2022, Solana Philippines has
             become the central hub for Filipino Solana enthusiasts—developers,
             traders, creators, and curious newcomers alike.
           </p>
+          <img
+            src='/tvs.webp'
+            className='sm:hidden w-full aspect-square object-contain'
+          />
           <p className='lg:text-xl'>
             We’re passionate about building a thriving, inclusive community
             where everyone can explore the power of blockchain technology and
