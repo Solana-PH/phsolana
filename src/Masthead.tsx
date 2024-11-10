@@ -3,7 +3,7 @@ import cn from 'classnames'
 export function Masthead() {
   return (
     <>
-      <div className='w-full h-[75vh] flex flex-col sticky top-0 z-0 pointer-events-none'>
+      <div className='w-full h-[75vh] flex flex-col absolute inset-x-0 top-0 z-0 pointer-events-none'>
         <div className='absolute inset-0 overflow-hidden'>
           <div
             className={cn(
@@ -42,7 +42,7 @@ export function Masthead() {
           </div>
         </div>
       </div>
-      <div className='w-full h-[25vh] bg-gray-900 relative'>
+      <div className='w-full h-[25vh] bg-gray-900 relative mt-[75vh]'>
         <div className='w-full h-[25vh] absolute -top-[12.5vh] overflow-visible'>
           <img src='/ribbon.svg' className='w-full h-full object-fill' />
         </div>
