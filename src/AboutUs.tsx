@@ -3,7 +3,7 @@ import cn from 'classnames'
 export function AboutUs() {
   return (
     <div className='flex flex-col bg-gray-900 relative z-10 pb-40 '>
-      <div className='grid grid-cols-12 p-10 md:p-20 pt-0 w-full max-w-7xl mx-auto'>
+      <div className='grid grid-cols-12 p-5 md:p-20 pt-0 w-full max-w-7xl mx-auto'>
         <div className='col-span-12 sm:col-span-7 flex flex-col gap-5 md:gap-10 h-full'>
           <h2 className='font-bold text-2xl lg:text-5xl'>
             About <wbr />
@@ -11,7 +11,7 @@ export function AboutUs() {
           </h2>
           <img
             src='/logo.svg'
-            className='sm:hidden w-full max-w-sm aspect-square object-contain'
+            className='sm:hidden w-full max-w-sm mx-auto aspect-square object-contain'
           />
           <p className='lg:text-2xl'>
             Founded during the Bear Market in June 2022, Solana Philippines has
