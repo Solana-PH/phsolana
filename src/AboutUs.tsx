@@ -5,10 +5,14 @@ export function AboutUs() {
     <div className='flex flex-col bg-gray-900 relative'>
       <div className='grid grid-cols-12 p-10 md:p-20 pt-0'>
         <div className='col-span-12 sm:col-span-7 flex flex-col gap-5 md:gap-10 h-full justify-center'>
-          <h2 className='font-bold text-2xl lg:text-5xl'>
+          <h2 className='font-bold text-2xl lg:text-5xl text-center sm:text-left'>
             About <wbr />
             Solana Philippines
           </h2>
+          <img
+            src='/logo.svg'
+            className='sm:hidden w-full max-w-sm aspect-square object-contain'
+          />
           <p className='lg:text-2xl'>
             Founded during the Bear Market in June 2022, Solana Philippines has
             become the central hub for Filipino Solana enthusiasts—developers,
@@ -35,7 +39,7 @@ export function AboutUs() {
             Join Our Community!
           </a>
         </div>
-        <div className='col-span-12 sm:col-span-5 flex flex-col gap-5 h-full items-center'>
+        <div className='hidden sm:flex sm:col-span-5 flex-col gap-5 h-full items-center'>
           <img
             src='/logo.svg'
             className='w-full max-w-sm aspect-square object-contain'
