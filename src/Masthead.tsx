@@ -65,7 +65,7 @@ export function Masthead() {
             'landscape:-top-[60vh] portrait:-top-[77.5vh] '
           )}
         >
-          <div className='w-[90vw] max-w-7xl mx-auto '>
+          <div className='w-[95vw] max-w-7xl mx-auto '>
             <h1
               className={cn(
                 'font-serif leading-none',
