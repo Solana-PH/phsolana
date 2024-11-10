@@ -3,7 +3,7 @@ import cn from 'classnames'
 export function Masthead() {
   return (
     <>
-      <div className='w-full h-[75vh] flex flex-col sticky top-0 pointer-events-none'>
+      <div className='w-full h-[75vh] flex flex-col sticky top-0 z-0 pointer-events-none'>
         <div className='absolute inset-0 overflow-hidden'>
           <div
             className={cn(
