@@ -61,7 +61,7 @@ export function Masthead() {
         </div>
         <div
           className={cn(
-            'absolute inset-x-0 flex flex-col overflow-hidden py-[12vh]',
+            'absolute inset-x-0 flex flex-col overflow-hidden py-[10vh]',
             'landscape:-top-[60vh] portrait:-top-[77.5vh] '
           )}
         >
@@ -72,7 +72,7 @@ export function Masthead() {
                 'text-[calc(min(1.8vw,1.8vh))]'
               )}
               style={{
-                transform: 'rotateZ(10deg)',
+                transform: 'rotateZ(5deg)',
                 transformStyle: 'preserve-3d',
               }}
             >
