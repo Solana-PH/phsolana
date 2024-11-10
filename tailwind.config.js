@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         serif: ['Barrio', 'ui-serif', 'Georgia', 'serif'],
-        sans: ['Roboto', 'ui-sans-serif', 'system-ui'],
+        sans: ['Onest', 'ui-sans-serif', 'system-ui'],
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite', // Customize the speed as needed
