@@ -88,7 +88,9 @@ export function Masthead() {
                   'text-[10em]'
                 )}
               >
-                Solana
+                S<span className='text-teal-200'>o</span>l
+                <span className='text-blue-200'>a</span>n
+                <span className='text-purple-200'>a</span>
               </span>
               <br />
               <span
@@ -97,7 +99,9 @@ export function Masthead() {
                   'text-[10em]'
                 )}
               >
-                Pilipinas!
+                <span className='text-blue-200'>P</span>ili
+                <span className='text-red-200'>pi</span>
+                <span className='text-yellow-200'>n</span>as!
               </span>
             </h1>
           </div>
