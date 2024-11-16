@@ -55,12 +55,11 @@ export function OurProjects() {
           backgroundSize: 'calc(min(16vw,16vh))',
         }}
       />
-      <div className={cn('flex flex-col')}>
+      <div className={cn('flex flex-col gap-5')}>
         <h2
           className={cn(
             'font-bold text-2xl lg:text-5xl',
             'w-full max-w-7xl mx-auto',
-            'pb-5 xl:pb-10',
             'px-5 md:px-20'
           )}
         >
@@ -98,7 +97,7 @@ export function OurProjects() {
                       className='w-full h-full object-contain'
                     />
                   </div>
-                  <div className='flex-1 flex flex-col gap-3 xl:gap-5 justify-center'>
+                  <div className='flex-1 flex flex-col gap-5 justify-center'>
                     <h2 className='font-bold text-2xl xl:text-4xl flex-none'>
                       <span className='flex gap-5 items-center'>
                         <img
