@@ -26,3 +26,20 @@
     0.055em 0.055em 0 rgba(25, 249, 156, 1),
     0.065em 0.065em 0 rgba(153, 69, 255, 1);
 }
+
+.noscrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.noscrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.noscrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(90, 90, 90, 0.2);
+}
+
+.noscrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(90, 90, 90, 0.5);
+}
