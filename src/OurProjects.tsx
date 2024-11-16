@@ -28,7 +28,14 @@ export function OurProjects() {
   }
 
   return (
-    <div className='flex flex-col bg-gradient-to-br from-orange-900 to-red-900 relative z-10 min-h-screen'>
+    <div
+      className={cn(
+        'flex flex-col relative z-10 min-h-screen',
+        'justify-center',
+        'bg-red-900'
+        // 'bg-gradient-to-br from-orange-900 to-red-900 '
+      )}
+    >
       <div
         className='absolute inset-0 pointer-events-none mix-blend-color-dodge opacity-25'
         style={{
@@ -41,7 +48,7 @@ export function OurProjects() {
           className={cn(
             'font-bold text-2xl lg:text-5xl',
             'w-full max-w-7xl mx-auto',
-            'pt-28 md:pt-40 pb-5 md:pb-10',
+            'pb-5 md:pb-10',
             'px-5 md:px-20'
           )}
         >
@@ -53,63 +60,59 @@ export function OurProjects() {
             onScroll={handleScroll}
             className={cn(
               'w-full h-full',
-              'px-5 md:px-20',
-              'bg-yellow-500',
+              'px-10 md:px-32',
               'noscrollbar overflow-x-scroll',
               'snap-x snap-mandatory'
             )}
           >
             <div
-              className={cn(
-                'w-full h-full bg-green-500 relative',
-                'flex overflow-visible'
-              )}
+              className={cn('w-full h-full relative', 'flex overflow-visible')}
             >
               <div
-                className={cn(
-                  'w-full h-full',
-                  'bg-red-600 flex-shrink-0',
-                  'snap-center'
-                )}
+                className={cn('w-full h-full', 'flex-shrink-0', 'snap-center')}
+              />
+              <div
+                className={cn('w-full h-full', 'flex-shrink-0', 'snap-center')}
+              />
+              <div
+                className={cn('w-full h-full', 'flex-shrink-0', 'snap-center')}
               />
               <div
                 className={cn(
-                  'w-full h-full',
-                  'bg-blue-600 flex-shrink-0',
-                  'snap-center'
-                )}
-              />
-              <div
-                className={cn(
-                  'w-full h-full',
-                  'bg-teal-600 flex-shrink-0',
-                  'snap-center'
-                )}
-              />
-              <div
-                className={cn(
-                  'w-5 md:w-20 h-full',
+                  'w-10 md:w-32 h-full',
                   'pointer-events-none flex-none'
                 )}
               />
             </div>
           </div>
           <button
-            className={cn(
-              'w-5 md:w-20',
-              'absolute inset-y-0 left-0 bg-purple-600'
-            )}
+            className={cn('w-10 md:w-32', 'absolute inset-y-0 left-0')}
+            style={{
+              backgroundColor: 'transparent',
+              backgroundImage:
+                'radial-gradient(transparent 1px, rgb(127 29 29) 1px)',
+              backgroundSize: '0.35em 0.35em',
+              backdropFilter: 'blur(3px)',
+              mask: 'linear-gradient(to right, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%)',
+              opacity: 1,
+            }}
             onClick={() => {
               index > 0 && handleScrollToIndex(index - 1)
             }}
           />
           <button
-            className={cn(
-              'w-5 md:w-20',
-              'absolute inset-y-0 right-0 bg-pink-600'
-            )}
+            className={cn('w-10 md:w-32', 'absolute inset-y-0 right-0')}
             onClick={() => {
               index < 2 && handleScrollToIndex(index + 1)
+            }}
+            style={{
+              backgroundColor: 'transparent',
+              backgroundImage:
+                'radial-gradient(transparent 1px, rgb(127 29 29) 1px)',
+              backgroundSize: '0.3em 0.3em',
+              backdropFilter: 'blur(3px)',
+              mask: 'linear-gradient(to left, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 90%)',
+              opacity: 1,
             }}
           />
         </div>
