@@ -97,7 +97,7 @@ export function OurProjects() {
                       className='w-full h-full object-contain'
                     />
                   </div>
-                  <div className='flex-1 flex flex-col gap-5 xl:gap-10 justify-center'>
+                  <div className='flex-1 flex flex-col gap-[3vh] xl:gap-10 justify-center'>
                     <h2 className='font-bold text-2xl xl:text-4xl flex-none'>
                       <span className='flex gap-5 items-center'>
                         <img
@@ -114,8 +114,7 @@ export function OurProjects() {
                     <p>
                       Built on Solana, QuestBoard lets you post or find
                       “quests”—community service requests, skill exchanges,
-                      project collaborations, and more—all in a decentralized,
-                      secure ecosystem.
+                      project collaborations, and more.
                     </p>
                     <p>
                       QuestBoard is designed to keep communication safe and
@@ -128,14 +127,14 @@ export function OurProjects() {
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        <GithubLogo size={32} />
+                        <GithubLogo size={'1.6em'} />
                       </a>
                       <a
                         href='https://solanaph.quest/'
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        <LinkSimple size={32} />
+                        <LinkSimple size={'1.6em'} />
                       </a>
                     </span>
                   </div>
@@ -165,8 +164,8 @@ export function OurProjects() {
               backgroundColor: 'transparent',
               backgroundImage:
                 'radial-gradient(transparent 1px, rgb(127 29 29) 1px)',
-              backgroundSize: '4px 4px',
-              backdropFilter: 'blur(3px)',
+              backgroundSize: '0.25em 0.25em',
+              backdropFilter: 'blur(0.2em)',
               mask: 'linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.1) 100%)',
               opacity: 1,
             }}
@@ -174,7 +173,7 @@ export function OurProjects() {
               index > 0 && handleScrollToIndex(index - 1)
             }}
           >
-            {index > 0 && <CaretLeft size={32} />}
+            {index > 0 && <CaretLeft size={'1.6em'} />}
           </button>
           <button
             className={cn(
@@ -195,7 +194,7 @@ export function OurProjects() {
               opacity: 1,
             }}
           >
-            {index < 2 && <CaretRight size={32} />}
+            {index < 2 && <CaretRight size={'1.6em'} />}
           </button>
         </div>
       </div>
