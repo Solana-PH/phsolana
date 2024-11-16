@@ -1,3 +1,4 @@
+import { GithubLogo, LinkSimple } from '@phosphor-icons/react'
 import cn from 'classnames'
 import { useRef, useState } from 'react'
 
@@ -33,7 +34,6 @@ export function OurProjects() {
         'flex flex-col relative z-10 min-h-screen',
         'justify-center',
         'bg-red-900'
-        // 'bg-gradient-to-br from-orange-900 to-red-900 '
       )}
     >
       <div
@@ -58,7 +58,7 @@ export function OurProjects() {
         <div
           className={cn(
             'relative lg:text-xl',
-            'h-[60vh] w-full max-w-7xl mx-auto'
+            'h-[65vh] w-full max-w-7xl mx-auto'
           )}
         >
           <div
@@ -80,7 +80,7 @@ export function OurProjects() {
                   'justify-center overflow-hidden'
                 )}
               >
-                <div className='flex portrait:flex-col'>
+                <div className='flex portrait:flex-col gap-5'>
                   <div className='flex-1 hidden xl:flex'>
                     <img
                       src='/questboard_img.webp'
@@ -89,7 +89,13 @@ export function OurProjects() {
                   </div>
                   <div className='flex-1 flex flex-col gap-3 xl:gap-5 justify-center'>
                     <h2 className='font-bold text-2xl xl:text-4xl flex-none'>
-                      QuestBoard
+                      <span className='flex gap-5 items-center'>
+                        <img
+                          src='/questboard_logo.svg'
+                          className='w-12 h-12 bg-gradient-to-tr from-slate-900 to-slate-800 rounded-xl p-1 shadow-md'
+                        />
+                        <span>QuestBoard</span>
+                      </span>
                     </h2>
                     <p>
                       QuestBoard is the first of many community-driven apps from
@@ -106,6 +112,22 @@ export function OurProjects() {
                       transparent, with fair dispute resolution, minimal fees,
                       and full open-source code.
                     </p>
+                    <span className='flex gap-5'>
+                      <a
+                        href='https://github.com/Solana-PH/QuestBoard'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <GithubLogo size={32} />
+                      </a>
+                      <a
+                        href='https://solanaph.quest/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <LinkSimple size={32} />
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
