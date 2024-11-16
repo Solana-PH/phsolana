@@ -1,0 +1,9 @@
+<svg width="200" height="101" viewBox="0 0 200 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:color-dodge">
+<path d="M50 50.6499L100 100.65H0L50 50.6499Z" fill="#DDDDDD" fill-opacity="0.5"/>
+<path d="M150 50.6499L200 100.65H100L150 50.6499Z" fill="#DDDDDD" fill-opacity="0.5"/>
+<path d="M0 0.649902L50 50.6499L0 100.65V0.649902Z" fill="#BBBBBB" fill-opacity="0.5"/>
+<path d="M100 0.649902L150 50.6499L100 100.65L50 50.6499L100 0.649902Z" fill="#BBBBBB" fill-opacity="0.5"/>
+<path d="M200 0.649902V100.65L150 50.6499L200 0.649902Z" fill="#BBBBBB" fill-opacity="0.5"/>
+</g>
+</svg>

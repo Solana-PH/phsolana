@@ -2,7 +2,15 @@ import cn from 'classnames'
 
 export function AboutUs() {
   return (
-    <div className='flex flex-col bg-gray-900 relative z-10 pb-40 '>
+    <div
+      className='flex flex-col bg-gray-900 relative z-10 pb-40'
+      style={{
+        backgroundImage: 'url("/banig_down.svg")',
+        backgroundPosition: 'bottom',
+        backgroundRepeat: 'repeat-x',
+        backgroundBlendMode: 'color-dodge',
+      }}
+    >
       <div className='grid grid-cols-12 p-5 md:p-20 pt-0 w-full max-w-7xl mx-auto'>
         <div className='col-span-12 sm:col-span-6 flex flex-col gap-5 md:gap-10 h-full'>
           <h2 className='font-bold text-2xl lg:text-5xl'>Who Are We?</h2>
