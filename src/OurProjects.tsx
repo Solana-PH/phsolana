@@ -15,7 +15,7 @@ export function OurProjects() {
           className={cn(
             'font-bold text-2xl lg:text-5xl',
             'w-full max-w-7xl mx-auto',
-            'pt-24 md:pt-40 pb-5 md:pb-10',
+            'pt-28 md:pt-40 pb-5 md:pb-10',
             'px-5 md:px-20'
           )}
         >
