@@ -1,4 +1,9 @@
-import { GithubLogo, LinkSimple } from '@phosphor-icons/react'
+import {
+  CaretLeft,
+  CaretRight,
+  GithubLogo,
+  LinkSimple,
+} from '@phosphor-icons/react'
 import cn from 'classnames'
 import { useRef, useState } from 'react'
 
@@ -18,13 +23,19 @@ export function OurProjects() {
     }
   }
 
+  const debounce = useRef(-1)
   const handleScroll = () => {
     const container = containerRef.current
     if (container) {
       const containerWidth = container.offsetWidth
       const scrollLeft = container.scrollLeft
-      const newIndex = Math.round(scrollLeft / containerWidth)
-      setIndex(newIndex)
+      if (debounce.current) {
+        clearTimeout(debounce.current)
+      }
+      debounce.current = setTimeout(() => {
+        const newIndex = Math.round(scrollLeft / containerWidth)
+        setIndex(newIndex)
+      }, 100)
     }
   }
 
@@ -146,7 +157,11 @@ export function OurProjects() {
             </div>
           </div>
           <button
-            className={cn('w-10 md:w-28', 'absolute inset-y-0 left-0')}
+            className={cn(
+              'w-10 md:w-28',
+              'absolute inset-y-0 left-0',
+              'flex items-center justify-center'
+            )}
             style={{
               backgroundColor: 'transparent',
               backgroundImage:
@@ -159,9 +174,15 @@ export function OurProjects() {
             onClick={() => {
               index > 0 && handleScrollToIndex(index - 1)
             }}
-          />
+          >
+            {index > 0 && <CaretLeft size={32} />}
+          </button>
           <button
-            className={cn('w-10 md:w-28', 'absolute inset-y-0 right-0')}
+            className={cn(
+              'w-10 md:w-28',
+              'absolute inset-y-0 right-0',
+              'flex items-center justify-center'
+            )}
             onClick={() => {
               index < 2 && handleScrollToIndex(index + 1)
             }}
@@ -174,7 +195,9 @@ export function OurProjects() {
               mask: 'linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.1) 100%)',
               opacity: 1,
             }}
-          />
+          >
+            {index < 2 && <CaretRight size={32} />}
+          </button>
         </div>
       </div>
     </div>
