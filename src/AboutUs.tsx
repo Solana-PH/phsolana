@@ -44,7 +44,7 @@ export function AboutUs() {
             Join Our Community!
           </a>
         </div>
-        <div className='hidden sm:flex sm:col-span-6 flex-col gap-5 h-full items-center'>
+        <div className='hidden sm:flex sm:col-span-6 flex-col gap-5 h-full items-center justify-center'>
           <img
             src='/tvs.webp'
             className='w-full aspect-square object-contain'
