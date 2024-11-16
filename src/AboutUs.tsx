@@ -9,6 +9,7 @@ export function AboutUs() {
         backgroundPosition: 'bottom',
         backgroundRepeat: 'repeat-x',
         backgroundBlendMode: 'color-dodge',
+        backgroundSize: 'calc(min(16vw,16vh))',
       }}
     >
       <div className='grid grid-cols-12 p-5 md:p-20 pt-0 w-full max-w-7xl mx-auto'>
