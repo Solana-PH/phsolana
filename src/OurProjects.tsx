@@ -87,7 +87,7 @@ export function OurProjects() {
               <div
                 className={cn(
                   'w-full h-full flex-shrink-0 snap-center flex flex-col gap-5 xl:gap-10',
-                  'justify-center overflow-hidden'
+                  'justify-center overflow-hidden pr-5'
                 )}
               >
                 <div className='flex portrait:flex-col gap-5'>
@@ -121,21 +121,24 @@ export function OurProjects() {
                       transparent, with fair dispute resolution, minimal fees,
                       and full open-source code.
                     </p>
-                    <span className='flex gap-5'>
-                      <a
-                        href='https://github.com/Solana-PH/QuestBoard'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        <GithubLogo size={'1.6em'} />
-                      </a>
-                      <a
-                        href='https://solanaph.quest/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        <LinkSimple size={'1.6em'} />
-                      </a>
+                    <span className='flex items-center justify-between'>
+                      <span className='flex gap-5'>
+                        <a
+                          href='https://github.com/Solana-PH/QuestBoard'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <GithubLogo size={'1.6em'} />
+                        </a>
+                        <a
+                          href='https://solanaph.quest/'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <LinkSimple size={'1.6em'} />
+                        </a>
+                      </span>
+                      <span className='italic text-sm'>In Development</span>
                     </span>
                   </div>
                 </div>
