@@ -1,11 +1,6 @@
-import {
-  CaretLeft,
-  CaretRight,
-  GithubLogo,
-  LinkSimple,
-} from '@phosphor-icons/react'
+import { GithubLogo, LinkSimple } from '@phosphor-icons/react'
 import cn from 'classnames'
-import { useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 
 export function OurProjects() {
   const [index, setIndex] = useState(0)
@@ -275,7 +270,7 @@ export function OurProjects() {
               index > 0 && handleScrollToIndex(index - 1)
             }}
           >
-            {index > 0 && <CaretLeft size={'1.6em'} />}
+            {/* {index > 0 && <CaretLeft size={'1.6em'} />} */}
           </button>
           <button
             className={cn(
@@ -296,9 +291,45 @@ export function OurProjects() {
               opacity: 1,
             }}
           >
-            {index < 2 && <CaretRight size={'1.6em'} />}
+            {/* {index < 2 && <CaretRight size={'1.6em'} />} */}
           </button>
+          <div
+            className={cn(
+              'w-10 md:w-28',
+              'absolute inset-y-0 right-0',
+              'pointer-events-none'
+            )}
+            style={{
+              backgroundImage:
+                'radial-gradient(transparent 1px, rgb(127 29 29) 1px)',
+              mask: 'linear-gradient(to left, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 70%)',
+            }}
+          />
+          <div
+            className={cn(
+              'w-10 md:w-28',
+              'absolute inset-y-0 left-0',
+              'pointer-events-none'
+            )}
+            style={{
+              backgroundImage:
+                'radial-gradient(transparent 1px, rgb(127 29 29) 1px)',
+              mask: 'linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 70%)',
+            }}
+          />
         </div>
+      </div>
+      <div className='flex gap-3 items-center max-w-[30vw] min-w-80 w-full mx-auto mt-5'>
+        {useMemo(() => [0, 1, 2], []).map((i) => (
+          <button
+            key={i}
+            onClick={() => handleScrollToIndex(i)}
+            className={cn(
+              'h-5 rounded-full transition-all duration-300 ease-in-out',
+              index === i ? 'bg-red-600 flex-grow-[2]' : 'bg-red-950 flex-1'
+            )}
+          />
+        ))}
       </div>
     </div>
   )
