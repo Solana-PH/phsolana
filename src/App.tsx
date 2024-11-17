@@ -2,6 +2,7 @@ import { AboutUs } from './AboutUs'
 import { Masthead } from './Masthead'
 import { AutoFontResizer } from './AutoFontResizer'
 import { OurProjects } from './OurProjects'
+import { Footer } from './Footer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Masthead />
         <AboutUs />
         <OurProjects />
+        <Footer />
       </div>
       <AutoFontResizer />
     </>

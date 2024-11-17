@@ -3,7 +3,7 @@ import cn from 'classnames'
 export function Masthead() {
   return (
     <>
-      <div className='w-full h-screen flex flex-col fixed inset-x-0 top-0 z-0 pointer-events-none'>
+      <div className='w-full h-[75vh] flex flex-col fixed inset-x-0 top-0 z-0 pointer-events-none'>
         <div className='absolute inset-0 overflow-hidden'>
           <div
             className={cn(
@@ -19,7 +19,7 @@ export function Masthead() {
           />
           <div
             className={cn(
-              'absolute inset-0 scale-150 translate-x-[calc(min(28vw,28vh))] translate-y-[20vh]',
+              'absolute inset-0 scale-150 translate-x-[calc(min(28vw,28vh))] translate-y-[30vh]',
               'landscape:translate-x-[calc(min(36vw,36vh))]',
               'flex items-center justify-center mix-blend-color'
             )}
@@ -30,7 +30,7 @@ export function Masthead() {
           </div>
           <div
             className={cn(
-              'absolute inset-0 translate-x-[calc(min(28vw,28vh))] translate-y-[20vh]',
+              'absolute inset-0 translate-x-[calc(min(28vw,28vh))] translate-y-[30vh]',
               'landscape:translate-x-[calc(min(36vw,36vh))]',
               'flex items-center justify-center'
             )}

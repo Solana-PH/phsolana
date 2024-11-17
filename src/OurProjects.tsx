@@ -106,7 +106,7 @@ export function OurProjects() {
                       <span className='flex gap-5 items-center'>
                         <img
                           src='/questboard_logo.svg'
-                          className='w-12 h-12 bg-gradient-to-tr from-slate-900 to-slate-800 rounded-xl p-1 shadow-md'
+                          className='w-12 h-12 bg-gradient-to-tr from-gray-900 to-stone-800 rounded-xl p-1 shadow-md'
                         />
                         <span>QuestBoard</span>
                       </span>

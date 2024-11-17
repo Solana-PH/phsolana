@@ -3,7 +3,7 @@ import cn from 'classnames'
 export function AboutUs() {
   return (
     <div
-      className='flex flex-col bg-gray-900 relative z-10 pb-40'
+      className='flex flex-col bg-gray-900 relative z-10 pb-20'
       style={{
         backgroundImage: 'url("/banig_down.svg")',
         backgroundPosition: 'bottom',
