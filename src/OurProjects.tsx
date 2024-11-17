@@ -90,7 +90,7 @@ export function OurProjects() {
                   'justify-center overflow-visible pr-5'
                 )}
               >
-                <div className='flex portrait:flex-col gap-5'>
+                <div className='flex portrait:flex-col gap-5 min-h-[80%]'>
                   <div className='flex-1 hidden xl:flex relative pointer-events-none'>
                     <img
                       src='/paint1.webp'
@@ -122,7 +122,7 @@ export function OurProjects() {
                       transparent, with fair dispute resolution, minimal fees,
                       and full open-source code.
                     </p>
-                    <span className='flex items-center justify-between'>
+                    <span className='flex items-center justify-between mt-auto'>
                       <span className='flex gap-5'>
                         <a
                           href='https://github.com/Solana-PH/QuestBoard'
@@ -150,7 +150,7 @@ export function OurProjects() {
                   'justify-center overflow-visible pr-5'
                 )}
               >
-                <div className='flex portrait:flex-col gap-5'>
+                <div className='flex portrait:flex-col gap-5 min-h-[80%]'>
                   <div className='flex-1 hidden xl:flex relative pointer-events-none'>
                     <img
                       src='/paint1.webp'
@@ -181,7 +181,7 @@ export function OurProjects() {
                       and benefit from the game. Token holders help decide how
                       income is used, ensuring growth benefits the community.
                     </p>
-                    <span className='flex items-center justify-between'>
+                    <span className='flex items-center justify-between mt-auto'>
                       <span className='flex gap-5'>
                         <a
                           href='https://github.com/val-samonte/dq'
