@@ -52,7 +52,7 @@ export function Token3d() {
     }
   }, [size, isDragging])
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (modelRef.current) {
       idleRotation.current += delta * idleDirection.current
 
