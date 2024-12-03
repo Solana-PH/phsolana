@@ -1,7 +1,7 @@
 export function Ribbon({ type }: { type: number }) {
   return (
     <div
-      className='h-[calc(min(8vw,8vh))] flex-none relative'
+      className='h-[calc(min(8vw,8vh))] flex-none relative z-20 pointer-events-none'
       style={{
         background: `url("/ribbon_${type === 0 ? 'blue' : 'red'}.webp")`,
         backgroundSize: 'contain',

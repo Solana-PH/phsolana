@@ -11,8 +11,8 @@ function App() {
       <div className='flex flex-col'>
         <Masthead />
         <AboutUs />
-        <OurProjects />
         <AboutToken />
+        <OurProjects />
         <Footer />
       </div>
       <AutoFontResizer />
