@@ -44,7 +44,7 @@ export function Masthead() {
       </div>
       <div className='w-full h-[25vh] bg-gray-900 relative mt-[75vh] '>
         <div className='w-full h-[25vh] absolute -top-[12.5vh] overflow-visible pointer-events-none'>
-          <img src='/ribbon.svg' className='w-full h-full object-fill' />
+          <img src='/flag.svg' className='w-full h-full object-fill' />
         </div>
         <div
           className={cn(
