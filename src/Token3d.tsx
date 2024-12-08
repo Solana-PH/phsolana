@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { useGLTF } from '@react-three/drei'
 
 export function Token3d() {
-  const { scene } = useGLTF('/coin.glb')
+  const { scene } = useGLTF('/coin-very-low.glb')
   const modelRef = useRef<THREE.Group>(null!)
   const { gl } = useThree()
   const [isDragging, setIsDragging] = useState(false)

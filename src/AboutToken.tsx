@@ -86,7 +86,7 @@ export function AboutToken() {
                 Use $SOLANAOL to vote on QuestBoard disputes, drive growth,
                 stake for voting power, and join exclusive events in Solana PH.
               </p>
-              <p className='lg:text-xl italic'>Coming Soon</p>
+              <p className='lg:text-xl italic'>Coming Soon!</p>
             </div>
             <div className='flex-1 shrink-0' />
           </div>
