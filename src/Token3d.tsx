@@ -8,8 +8,8 @@ export function Token3d() {
   const modelRef = useRef<THREE.Group>(null!)
   const { gl } = useThree()
   const [isDragging, setIsDragging] = useState(false)
-  const targetRotation = useRef<[number, number, number]>([0, 0, 0])
-  const currentRotation = useRef<[number, number, number]>([0, 0, 0])
+  const targetRotation = useRef<[number, number, number]>([-0.125, 0.175, 0])
+  const currentRotation = useRef<[number, number, number]>([-0.125, 0.175, 0])
   const idleRotation = useRef(0)
   const idleDirection = useRef(1)
 
