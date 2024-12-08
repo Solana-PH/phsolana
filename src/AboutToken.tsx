@@ -75,7 +75,7 @@ export function AboutToken() {
               'flex flex-col-reverse landscape:flex-row'
             )}
           >
-            <div className='pointer-events-auto flex-1 shrink-0 landscape:pl-20 portrait:lg:px-20 portrait:px-10 flex flex-col justify-center'>
+            <div className='select-none pointer-events-auto flex-1 shrink-0 landscape:pl-20 portrait:lg:px-20 portrait:px-10 flex flex-col justify-center'>
               <h2 className='font-bold text-2xl lg:text-5xl mb-4 portrait:mb-2'>
                 $SOLANAOL
               </h2>

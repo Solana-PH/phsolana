@@ -1,10 +1,10 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, Suspense } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
-import { useGLTF } from '@react-three/drei'
+import { useDetectGPU, useGLTF } from '@react-three/drei'
 
-export function Token3d() {
-  const { scene } = useGLTF('/coin-very-low.glb')
+function Model({ path }: { path: string }) {
+  const { scene } = useGLTF(path)
   const modelRef = useRef<THREE.Group>(null!)
   const { gl } = useThree()
   const [isDragging, setIsDragging] = useState(false)
@@ -66,7 +66,7 @@ export function Token3d() {
     currentRotation.current[0] += (targetX - currentRotation.current[0]) * 0.1
     currentRotation.current[1] +=
       (!isDragging
-        ? idleRotation.current * 0.0125
+        ? idleRotation.current * 0.025
         : targetY - currentRotation.current[1]) * 0.1
     currentRotation.current[2] += (targetZ - currentRotation.current[2]) * 0.1
 
@@ -76,5 +76,35 @@ export function Token3d() {
     modelRef.current.rotation.z = currentRotation.current[2]
   })
 
-  return <primitive object={scene} ref={modelRef} />
+  return (
+    <primitive
+      object={scene}
+      ref={modelRef}
+      onPointerDown={(event: any) => {
+        try {
+          event.stopPropagation()
+          event.nativeEvent.preventDefault()
+        } catch (e) {
+          //do nothing
+        }
+      }}
+    />
+  )
+}
+
+export function Token3d() {
+  const GPUTier = useDetectGPU()
+
+  const modelPath =
+    GPUTier?.tier <= 1
+      ? '/coin-very-low.glb'
+      : GPUTier?.tier === 2
+      ? '/coin-low.glb'
+      : '/coin.glb'
+
+  return (
+    <Suspense fallback={null}>
+      <Model path={modelPath} />
+    </Suspense>
+  )
 }
