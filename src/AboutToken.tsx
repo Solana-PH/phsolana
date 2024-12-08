@@ -7,7 +7,7 @@ import { Token3d } from './Token3d'
 
 function Stage() {
   return (
-    <Canvas camera={{ position: [0, 0, 2.5] }}>
+    <Canvas camera={{ position: [0, 0, 2.35] }}>
       <Token3d />
       <ambientLight intensity={0.5} />
       <Environment preset='sunset' background backgroundBlurriness={0.5} />
