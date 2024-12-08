@@ -75,18 +75,18 @@ export function AboutToken() {
               'flex flex-col-reverse landscape:flex-row'
             )}
           >
-            <div className='select-none pointer-events-auto flex-1 shrink-0 landscape:pl-20 portrait:lg:px-20 portrait:px-10 flex flex-col justify-center'>
-              <h2 className='font-bold text-2xl lg:text-5xl mb-4 portrait:mb-2'>
+            <div className='select-none flex-1 shrink-0 landscape:pl-20 portrait:lg:px-20 portrait:px-10 flex flex-col justify-center'>
+              <h2 className='pointer-events-auto font-bold text-2xl lg:text-5xl mb-4 portrait:mb-2'>
                 $SOLANAOL
               </h2>
-              <p className='lg:text-xl font-bold mb-10 portrait:mb-5'>
+              <p className='pointer-events-auto lg:text-xl font-bold mb-10 portrait:mb-5'>
                 The Solana PH DAO Token – Fueling Our Community
               </p>
-              <p className='lg:text-xl mb-10 portrait:hidden'>
+              <p className='pointer-events-auto lg:text-xl mb-10 portrait:hidden'>
                 Use $SOLANAOL to vote on QuestBoard disputes, drive growth,
                 stake for voting power, and join exclusive events in Solana PH.
               </p>
-              <p className='lg:text-xl italic'>Coming Soon!</p>
+              <p className='lg:text-xl italic'>Coming Soon</p>
             </div>
             <div className='flex-1 shrink-0' />
           </div>
