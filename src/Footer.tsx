@@ -2,7 +2,7 @@ import { FacebookLogo, GithubLogo, XLogo } from '@phosphor-icons/react'
 
 export function Footer() {
   return (
-    <footer className='min-h-[20vh] w-full relative bg-black'>
+    <footer className='min-h-[25vh] w-full relative bg-black'>
       <div
         className='absolute inset-0 pointer-events-none opacity-20'
         style={{
@@ -13,7 +13,7 @@ export function Footer() {
           backgroundSize: 'calc(min(16vw,16vh))',
         }}
       />
-      <div className='absolute inset-0  px-5 md:px-20 max-w-7xl w-full mx-auto flex items-center justify-between h-full'>
+      <div className='absolute inset-0  p-5 md:px-20 max-w-7xl w-full mx-auto flex items-center justify-between h-full'>
         <div className='flex items-center gap-3'>
           <img src='/logo.svg' className='w-16 h-16 object-contain' />
           <span className='text-lg font-bold tracking-wide leading-6'>
